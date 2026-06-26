@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wronskian Warriors - The Bouncing Weight on a Spring</title>
+  <meta name="description" content="A friendly look at how a weight on a spring settles back to rest, with a live simulator you can play with. A MATH251 project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="reveal">
+        <h1>One spring, one mass,<br>four ways to come to rest.</h1>
+        <p class="lede">Hang a weight on a spring, pull it down, and let go. It bounces, then slowly settles. How fast and how smoothly it settles comes down to one thing: how much something is slowing the motion. This project works out the maths behind that, and lets you play with it.</p>
+        <div class="tag-row">
+          <a class="btn btn--primary" href="#what">See how it works <span class="arr">&rarr;</span></a>
+          <a class="btn btn--ghost" href="analysis.html#lab">Open the simulator</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="hero__stage">
+          <div class="hero__stagebar">
+            <span class="card__tag">Live simulation</span>
+            <div class="seg" role="group" aria-label="Choose how much the motion is slowed">
+              <button data-regime="undamped">None</button>
+              <button data-regime="under" aria-pressed="true">Light</button>
+              <button data-regime="critical">Just enough</button>
+              <button data-regime="over">Heavy</button>
+            </div>
+          </div>
+          <canvas id="hero-canvas" aria-label="Animation of a weight bouncing on a spring, with a graph of its position over time"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IS THIS ============ -->
+  <section class="section section--paper" id="what">
+    <div class="wrap">
+      <div class="center" style="max-width:760px;margin-inline:auto">
+        <h2>What is this all about?</h2>
+        <p class="lede" style="margin-inline:auto">A weight on a spring is one of the most common moving parts in the world. On its own it would bounce forever. Add something that resists the movement, like a shock absorber, and the bouncing fades away. The big question we explore is simple: how much resistance gives the best result?</p>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:3rem">
+        <div class="card reveal">
+          <h3>Too little resistance</h3>
+          <p class="mb0 muted">The weight keeps bouncing up and down for a long time before it finally calms down. Think of an old car with worn out shock absorbers.</p>
+        </div>
+        <div class="card reveal" style="border-top:3px solid var(--sage)">
+          <h3>Just the right amount</h3>
+          <p class="mb0 muted">The weight returns to rest as quickly as possible without bouncing at all. This is the sweet spot engineers usually aim for.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Too much resistance</h3>
+          <p class="mb0 muted">The weight crawls back to rest slowly, like a heavy door on a strong closer that takes its time to shut.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:1.6rem">
+        <div class="card card--flat reveal">
+          <h4>In your car</h4>
+          <p class="mb0 muted">Shock absorbers stop your car bouncing after every bump in the road.</p>
+        </div>
+        <div class="card card--flat reveal">
+          <h4>On a door</h4>
+          <p class="mb0 muted">The closer on an office door eases it shut instead of letting it slam.</p>
+        </div>
+        <div class="card card--flat reveal">
+          <h4>In tall buildings</h4>
+          <p class="mb0 muted">Skyscrapers hide huge weights that steady them against wind and earthquakes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODEL + ANALYSIS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid-2" style="align-items:stretch">
+        <div class="card reveal" style="display:flex;flex-direction:column">
+          <h2 style="margin-bottom:.4rem">The maths behind the motion</h2>
+          <p>Starting from a basic law of physics (force equals mass times acceleration), we build a single equation that captures the whole behaviour: the spring pulling the weight back, the resistance slowing it down, and the weight's own inertia. From there we can predict exactly how the motion plays out.</p>
+          <p class="muted">No heavy background needed. We walk through every step in plain terms, with the diagrams to match.</p>
+          <div style="margin-top:auto;padding-top:1rem">
+            <a class="btn btn--primary" href="model.html">Explore the model <span class="arr">&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;flex-direction:column;border-top:3px solid var(--sage)">
+          <h2 style="margin-bottom:.4rem">Watch it move</h2>
+          <p>This is the fun part. Our simulator solves the maths live as you drag the controls, so you can change the weight, the spring, and the amount of resistance and see the motion update instantly. Cross the sweet spot and the bouncing disappears in front of you.</p>
+          <p class="muted">Everything runs right here in your browser. Nothing to install, nothing to wait for.</p>
+          <div style="margin-top:auto;padding-top:1rem">
+            <a class="btn btn--sage" href="analysis.html#lab">Open the simulator <span class="arr">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREATIVE ============ -->
+  <section class="section section--paper">
+    <div class="wrap split">
+      <div class="reveal">
+        <h2>Colour it in</h2>
+        <p>We also turned the whole system into a picture you can colour. Pick a crayon, fill in the spring, the weight and the fading wave, and download your version for the report or the wall. It is a calm, hands on way to get to know the parts.</p>
+        <a class="btn btn--primary" href="creative.html">Open the colouring page <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="reveal">
+        <div class="card center" style="display:grid;place-items:center;min-height:220px;background:repeating-linear-gradient(45deg,var(--paper),var(--paper) 14px,var(--paper-2) 14px,var(--paper-2) 28px)">
+          <p class="mb0" style="font-family:var(--display);font-size:1.4rem;color:var(--ink-2)">Bring the maths to life with colour</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap center" style="max-width:720px;margin-inline:auto">
+      <h2>Get in touch</h2>
+      <p class="lede" style="margin-inline:auto">We are the Wronskian Warriors, a student group at Ashesi University. If you have a question about the project, want to reproduce a result, or just want to say hello, we would love to hear from you.</p>
+      <div class="tag-row" style="justify-content:center">
+        <a class="btn btn--primary" href="mailto:martha.afful@ashesi.edu.gh">Email the team</a>
+        <a class="btn btn--ghost" href="team.html">Meet the team</a>
+        <a class="btn btn--ghost" href="resources.html">See our sources</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/solver.js"></script>
+<script src="js/plot.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>
