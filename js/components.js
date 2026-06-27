@@ -62,7 +62,7 @@
       '<header class="nav">' +
         '<div class="nav__inner">' +
           '<a class="brand" href="index.html">' + MARK +
-            '<span><span class="brand__name">Wronskian Warriors</span>' +
+            '<span><span class="brand__name">Wronskian Genuises</span>' +
             '<span class="brand__sub">Mass · Spring · Damper</span></span></a>' +
           '<nav aria-label="Primary"><ul class="menu">' + items + '</ul></nav>' +
           '<a class="btn btn--primary nav__cta" href="analysis.html#lab">Open the simulator</a>' +
@@ -112,7 +112,7 @@
         '<div class="foot__top">' +
           '<div class="foot__brand">' +
             '<a class="brand" href="index.html" style="color:#fff">' + MARK +
-              '<span class="brand__name" style="color:#fff">Wronskian Warriors</span></a>' +
+              '<span class="brand__name" style="color:#fff">Wronskian Genuises</span></a>' +
             '<p style="margin-top:.8rem">A MATH251 project exploring how a mass on a spring settles back to rest, derived by hand, solved by computer, and made playable in your browser.</p>' +
           '</div>' +
           '<div><h5>Explore</h5><ul>' +

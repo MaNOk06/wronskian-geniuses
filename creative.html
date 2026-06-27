@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Colour It In - Wronskian Warriors</title>
+  <title>Colour It In - Wronskian Genuises</title>
   <meta name="description" content="A colour-it-yourself picture of the weight on a spring. Pick a crayon, fill it in, and download your version.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,7 +160,7 @@
       var data = '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(clone);
       var blob = new Blob([data], { type: "image/svg+xml" });
       var a = document.createElement("a");
-      a.href = URL.createObjectURL(blob); a.download = "wronskian-warriors-picture.svg";
+      a.href = URL.createObjectURL(blob); a.download = "wronskian-Genuises-picture.svg";
       document.body.appendChild(a); a.click(); document.body.removeChild(a);
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
     });
