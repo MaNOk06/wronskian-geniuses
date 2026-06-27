@@ -1,6 +1,6 @@
-# Wronskian Warriors website
+# Wronskian Genuises website
 
-A friendly, multi-page site about a weight bouncing on a spring. Plain HTML, CSS and JavaScript, with no build step and no framework. Every interactive graph is worked out live in your browser.
+A site about a weight bouncing on a spring. Plain HTML, CSS and JavaScript, with no build step and no framework. Every interactive graph is worked out live in your browser.
 
 ## Pages
 - `index.html` : home, with the introduction, the model and analysis summaries, and contact
