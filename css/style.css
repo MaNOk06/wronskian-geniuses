@@ -293,3 +293,14 @@ input[type=range]:focus-visible::-webkit-slider-thumb{ outline:2px solid var(--s
 .repl-slot{ flex:1; display:grid; place-items:center; text-align:center; min-height:150px; border:1px dashed var(--line); border-radius:9px;
   background:repeating-linear-gradient(45deg,var(--paper),var(--paper) 12px,var(--paper-2) 12px,var(--paper-2) 24px); padding:1rem; }
 .repl-frame{ border:1px solid var(--line); border-radius:9px; padding:8px; background:var(--paper); }
+
+/* ---------- creative comic strip ---------- */
+.comic{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; margin-top:2rem; }
+@media (max-width:1100px){ .comic{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:540px){ .comic{ grid-template-columns:1fr; } }
+.panel{ position:relative; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius-sm); padding:12px; box-shadow:var(--shadow); }
+.panel svg{ width:100%; height:auto; display:block; background:#FFFDF8; border:1px solid var(--line-soft); border-radius:8px; }
+.panel__n{ position:absolute; top:-12px; left:-12px; width:32px; height:32px; border-radius:50%; background:var(--terracotta);
+  color:#fff; font-family:var(--display); font-weight:600; display:grid; place-items:center; font-size:1rem; box-shadow:var(--shadow); }
+.panel__cap{ font-size:.95rem; color:var(--ink-2); margin:.7rem 0 0; }
+.panel__cap b{ color:var(--ink); }

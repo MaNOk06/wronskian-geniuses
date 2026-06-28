@@ -25,6 +25,7 @@
       { label: "Phase plane", href: "analysis.html#phase" },
       { label: "Sensitivity analysis (phase)", href: "analysis.html#lab-phase" }
     ]},
+    { id: "creative", label: "Creative", href: "creative.html" },
     { id: "future", label: "What's Next", href: "future.html" },
     { id: "about", label: "About", href: "team.html", children: [
       { label: "The team", href: "team.html#team" },
@@ -112,6 +113,7 @@
             '<li><a href="analysis.html#lab">Sensitivity analysis</a></li>' +
             '<li><a href="analysis.html#replication">Replication</a></li>' +
             '<li><a href="future.html">What\'s next</a></li>' +
+            '<li><a href="creative.html">Creative</a></li>' +
           '</ul></div>' +
           '<div><h5>Project</h5><ul>' +
             '<li><a href="team.html">The team</a></li>' +
